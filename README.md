@@ -14,10 +14,11 @@ I did the lab safety training so that I could have unrestricted 24/7 access to 2
 I met two guys in lecture and agreed to join their group. We were still in the midst of introducing ourselves and deciding whose project to pursue by the time the early project approval deadline came and went, so we didn't submit anything for it. The three of us decided to focus on Rayan's idea of a pressure sensing pad for bedridden hospital patients. It would detect when someone is laying in the same spot for too long and alert someone to come and move them, that way they don't get bed sores or any other pressure related injuries. 
 
 # Week 3: 9/7
-lecture
+We had another lecture this week, mostly about the guest speakers and their projects. Our third group member left us and so it is just me and Rayan now. Rayan was interested in joining Stride Secure sso we wrote up an application to join that project but they never got back to us until they had already selected another group. Quite unprofessional in my opinion. Anyway, we had prepared our own request for project approval anyway so we submitted that. I also had the CAD Assignment due so I worked on that.
 ## Project Approval
-blah
+The problem we were focused on solving was to prevent pressure-related injuries in bedridden patients. Evidence cited in our actual proposal points to frequent repositioning as the best way to prevent ulcers from being formed, so we wanted to create a pad that could detect when someone was laying in the same spot for too long and alert a caregiver to come and move the patient via Bluetooth. 
 ## CAD Assignment
+This was a solo assignment, I followed the assignment tutorial to use KiCAD and design a motor driver circuit, complete with USB connectivity, I/O pins, and an MCU. The assignment failed to mention that you cannot use the newest version of KiCAD or else it wouldn't work, so I had to downgrade it after the fact and wasted a good amount of time. It's chill though.
 
 # Week 4: 9/14
 ## What did we do?
