@@ -31,9 +31,10 @@ We also decided that for maximum comfort and reliable pressure readings, we woul
 
 # Week 5: 9/21
 ## What did we do?
-blah
+We had a discussion on the project details and ironed out our team contract. For the project, we continued brainstorming on how to eliminate ghost currents in our sensor matrix. We decided the best way to stop other sensors from messing up another's reading while still limiting the number of wires we would need to connect to the pad from our PCB was to individually drive each sensors but have the readings come through one main bus instead of individual wires. My teammate had a really nice picture for it but it's not mine so I won't take credit. Basically, we cut down the number of regions from 3 to 2, settling on the Lower Back and Hips since those two were cited as the most prone to pressure related injuries. Then, we would have 16 wires for the positive end (theoretically the positive end, the FSRs are not polarized) of each FSR and one large wire for the reading. Then, by only powering one at a time, we can ensure the reading at each sensor is as accurate as possible. The updated visual aid for this is as follows: <img width="553" height="352" alt="image" src="https://github.com/user-attachments/assets/79ca6c1a-d4dd-4093-873f-00c451ecb788" />
+
 ## Team Contract
-blah
+Being a group of two, making the team contract was pretty easy. Usually in a group of three, one of the members will not be as involved or try to skate by without doing much work. Having two makes this impossible, since any work would likely be done together at the same time. There is not much sense in splitting up when there's only two people's schedule to plan around. While writing the team contract, we said we'd meet up to do all work and only make decisions by complete agreement between us. Any conflict would be resolved with the help of our TA during the weekly meeting. Additionally, we agreed we would both attend every TA meeting and be as honest and prompt as possible when it came to difficulties in any individual work we decided to do later down the line. 
 
 # Week 6: 9/28
 ## What did we do?
