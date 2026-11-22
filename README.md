@@ -123,6 +123,7 @@ blah
 blah
 
 # Week 14: 11/23
+## What did we do?
 Thanksgiving break! I worked on the slides for the mock presentation since we are scheduled to give them the monday we get back from break. 
 
 # Week 15: 11/30
