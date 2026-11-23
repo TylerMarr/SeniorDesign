@@ -78,11 +78,12 @@ We decided to use the FSR400 short-tail since the other versions were more expen
 
 # Week 7: 10/5
 ## What did we do?
-blah
+We prepped our presentation strategy for the design review and I did a lot of work on starting and finishing our PCB design for the 2nd round order.
 ## Design Review
-blah
+The presentation went pretty well. The professor didn't have any questions for us, same with our TA. We had a bit of a mix-up with the room number so we lost points on professionalism for sure, but our design itself was perfect! Some of the peer reviewers had questions on why we chose Bluetooth instead of WiFi for our alerting, I guess I can look into that but I think we initially ruled that out because it would take more power? I can double check that but we will likely stick with Bluetooth. Seems easier to me. 
 ## 2nd Round PCB Order
-blah
+This took a while. Our systems has 6 subsystems, Power, MCU, USB, Analog Acquisition, I/O Pins, and Sensing Muxes. Our power subsystem doesn not feature a Li-Ion charger or battery, since our product would remain stationary on the bed we think it's fine to simply have wall power via USB the entire time. We still have the 3.3V voltage regulator IC since the ESP32 is only 3.3V tolerant. The USB subsystem was copied from the PCB assignment since we don't need to add data transfer functionality for our project. Next is the MCU subsystem, we swapped the STM32 for an ESP32-WROOM-32E for the built-in Bluetooth antenna. We knew that we would have to somehow communicate our program from the Arduino IDE to the ESP32, so I added a reset and boot button with pull up resistors to select GPIO's. The ESP32 has a bootloader mode, which allow you to flash a program onto it through the UART TX and RX pins after you press and hold BOOT, then press and release RESET, then wait a second and release BOOT. Then, using a USB to UART adapter from Amazon, we will be able to connect the GND, TX, and RX pins of the adapter to the broken-out pins of our board and we'd be in business. I also added some LED's to signify the MCU was working and some debug test points to later verify that we are able to program it. The Analog Acquisition subsystem takes the input from the data-read pin on our board that connects to the common output rail of all of our sensors. It goes through the below measurment resistor + op-amp circuit as described by the FSR400 data sheet, followed by an ADC with the peripherals chosen as described by its respective datasheet. We needed the ADC because the output of our measurement circuit can vary from 0 to 5 volts, but the input pins of the ESP32 are only 3.3V tolerant, so any more would result in our entire board blowing up in a puff of smoke, along with my graduation chances. 
+<img width="236" height="217" alt="image" src="https://github.com/user-attachments/assets/975da189-c06f-471c-bda7-a8f1dda9b375" />
 
 # Week 8: 10/12
 ## What did we do?
